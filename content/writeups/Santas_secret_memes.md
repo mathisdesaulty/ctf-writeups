@@ -1,10 +1,10 @@
 ---
-title: "Nom de votre challenge"
+title: "Santa's Secret Memes"
 date: 2024-12-10T20:00:00+01:00
 draft: false
-categories: ["Web"]
-tags: ["SQLi", "Easy"]
-description: "Description courte du challenge"
+categories: ["misc"]
+tags: ["Easy"]
+description: "Challenge du XMAS Root-Me"
 ---
 
 # 1-Prendre les informations
