@@ -14,6 +14,20 @@ theme = 'terminal'
   ShowRssButtonInSectionTermList = true
   ShowToc = true
   TocOpen = true
+  # Centrer le contenu
+  centerTheme = true
+  
+  # Largeur pleine (optionnel, essayez les deux)
+  fullWidthTheme = false
+  
+  # Couleur du thème (green, orange, red, blue, pink)
+  themeColor = "green"
+  
+  # Nombre d'items dans le menu
+  showMenuItems = 5
+  
+  # Type de contenu
+  contentTypeName = "posts"
 
 [params.homeInfoParams]
   Title = "👋 Bienvenue !"
