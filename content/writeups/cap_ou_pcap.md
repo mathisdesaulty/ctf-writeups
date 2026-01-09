@@ -40,22 +40,22 @@ Nous pouvons suivre la communication pour avoir ce qui est transmis:
 
 Nous avons plus qu'à mettre ces données dans un fichier:
 ```bash
-mathis@fedora-2:~/Documents/ctf/hackropole/cap_ou_pcap$ echo "504b0304140000000800a231825065235c39420000004700000008001c00666c61672e7478745554090003bfc8855ebfc8855e75780b000104e803000004e80300000dc9c11180300804c0bfd5840408bc33630356e00568c2b177ddef9eeb5a8fe6ee06ce8e5684f0845997192aad44ecaedc7f8e1acc4e3ec1a8eda164d48c28c77b7c504b01021e03140000000800a231825065235c394200000047000000080018000000000001000000a48100000000666c61672e7478745554050003bfc8855e75780b000104e803000004e8030000504b050600000000010001004e000000840000000000" | xxd -r -p > file 
+P3P3@marcel-2:~/Documents/ctf/hackropole/cap_ou_pcap$ echo "504b0304140000000800a231825065235c39420000004700000008001c00666c61672e7478745554090003bfc8855ebfc8855e75780b000104e803000004e80300000dc9c11180300804c0bfd5840408bc33630356e00568c2b177ddef9eeb5a8fe6ee06ce8e5684f0845997192aad44ecaedc7f8e1acc4e3ec1a8eda164d48c28c77b7c504b01021e03140000000800a231825065235c394200000047000000080018000000000001000000a48100000000666c61672e7478745554050003bfc8855e75780b000104e803000004e8030000504b050600000000010001004e000000840000000000" | xxd -r -p > file 
 ```
 
 `xxd -r -p` permet de décoder de le décimal à un fichier en binaire. 
 
 On vérifie que l'on a bien un fichier compressé:
 ```bash
-mathis@fedora-2:~/Documents/ctf/hackropole/cap_ou_pcap$ file file 
+P3P3@marcel-2:~/Documents/ctf/hackropole/cap_ou_pcap$ file file 
 file: Zip archive data, made by v3.0 UNIX, extract using at least v2.0, last modified, last modified Sun, Apr 02 2020 06:13:04, uncompressed size 71, method=deflate
 ```
 
 On peut alors regarder ce qu'il y a dedans en le décompressant:
 ```bash
-mathis@fedora-2:~/Documents/ctf/hackropole/cap_ou_pcap$ unzip file
+P3P3@marcel-2:~/Documents/ctf/hackropole/cap_ou_pcap$ unzip file
 Archive:  file
 inflating: flag.txt                
-mathis@fedora-2:~/Documents/ctf/hackropole/cap_ou_pcap$ cat flag.txt 
+P3P3@marcel:~/Documents/ctf/hackropole/cap_ou_pcap$ cat flag.txt 
 FCSC{xxxxxxxxxxxxxx}
 ```
