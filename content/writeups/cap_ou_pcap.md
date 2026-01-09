@@ -1,9 +1,9 @@
 +++
 date = '2026-01-09T10:50:30+01:00'
 title = 'Cap_ou_pcap'
-draft: false
-categories: ["Forensic"]
-tags: ["Intro"]
+draft = false
+categories = ["Forensic"]
+tags = ["Intro"]
 +++
 Le challenge nous donne simplement un fichier pcap dans lequel nous pouvons voir une communication entre deux machines. 
 On peut suivre la première communication TCP de ces deux machines:
